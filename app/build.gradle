@@ -27,15 +27,15 @@ android {
         }
     }
 
-    // 多渠道打包
-    productFlavors {
-        coolapk {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "coolapk"]
-        }
-        xiaomi {
-            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
-        }
-    }
+//    // 多渠道打包
+//    productFlavors {
+//        coolapk {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "coolapk"]
+//        }
+//        xiaomi {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+//        }
+//    }
 }
 
 allprojects {
@@ -75,7 +75,7 @@ dependencies {
     //图片加载框架
     //圆角
     testCompile 'junit:junit:4.12'
-    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+//    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
     compile 'com.github.open-android:SharedPreferencesUtils:0.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'moe.feng:AlipayZeroSdk:1.1'
@@ -92,7 +92,9 @@ dependencies {
     compile 'com.leon:lsettingviewlibrary:1.5.0'
     compile 'com.github.AndroidDeveloperLB:MaterialPreferenceLibrary:10'
     compile 'com.github.XuDaojie:QRCode-Android:v0.4.2'
-    compile 'com.umeng.analytics:analytics:latest.integration'
+//    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile  'com.umeng.umsdk:analytics:7.5.4'
+    compile  'com.umeng.umsdk:common:1.5.4'
     compile 'com.android.support:design:23.4.0'
 //    compile 'com.facebook.fresco:fresco:0.12.0'
     compile 'de.hdodenhof:circleimageview:2.2.0' //圆角ImageView
